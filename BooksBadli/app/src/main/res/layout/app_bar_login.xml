@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.Toolbar android:background="@color/loginBackground" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" app:theme="@style/MyCustomToolBarTheme"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

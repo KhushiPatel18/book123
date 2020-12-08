@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/loginBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/app_bar" layout="@layout/app_bar_login" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.2">
+            <LinearLayout android:background="@color/colorSplash" android:layout_width="5.0dip" android:layout_height="50.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip">
+                <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sign Up" android:fontFamily="sans-serif-light" />
+                <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enter your details below" android:fontFamily="sans-serif-light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_FullName_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/alphabets"
+                android:drawableLeft="@drawable/ic_fa_users"
+                android:drawablePadding="10.0dip"
+                android:hint="Full Name"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12.0dip" />
+
+            <EditText
+                android:id="@+id/customerEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/emailDigits"
+                android:drawableLeft="@drawable/ic_action_email"
+                android:drawablePadding="10.0dip"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12.0dip" />
+
+            <EditText
+                android:id="@+id/customerPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10.0dip"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12.0dip" />
+
+            <EditText
+                android:id="@+id/customerPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_call"
+                android:drawablePadding="10.0dip"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12.0dip" />
+
+            <EditText
+                android:id="@id/otp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10.0dip"
+                android:hint="Enter OTP"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="12.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="20.0dip" android:layout_weight="0.2">
+            <Button android:textColor="@color/white" android:id="@id/register" android:background="@color/colorSplash" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="SIGN UP" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="By using app, you agree to our Privacy Policy and Terms of Service." android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
